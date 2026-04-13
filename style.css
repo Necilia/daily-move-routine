@@ -1,0 +1,267 @@
+/* html {
+    scroll-behavior: smooth;
+} */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-color: rgb(15, 23, 1);
+    color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #0f2e1f;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #becc5e; /* Cor da marca no título */
+}
+
+/* NAV */
+nav a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #becc5e;
+}
+
+/* MAIN */
+main {
+    padding: 30px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* SECTIONS */
+section {
+    margin-bottom: 80px; /* Mais espaço entre seções para respirar */
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 25px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 650px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+}
+
+.hero img {
+    max-width: 600px;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* BENEFITS */
+#benefits {
+    text-align: center;
+}
+
+#benefits h2 {
+    margin-bottom: 30px;
+}
+
+#benefits ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#benefits li {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 180px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+#benefits li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px); 
+    border-color: #becc5e;       
+}
+
+#benefits img {
+    margin-top: 50px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* HEALTH */
+#health {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#health h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #becc5e;
+    margin-bottom: 40px;
+}
+
+/* Contêiner dos blocos de saúde */
+.health-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.health-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 320px;
+    max-width: 500px;
+}
+
+.health-card h3 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.health-card ul {
+    list-style-position: inside;
+    margin: 15px 0;
+}
+
+.health-card li {
+    margin-bottom: 8px;
+}
+
+.health-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* ROUTINES */
+#routines {
+    text-align: center;
+}
+
+#routines h2 {
+    margin-bottom: 20px;
+}
+
+.routine-list {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.routine-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 230px;
+    max-width: 280px;
+    transition: transform 0.3s;
+}
+
+.routine-card:hover {
+    transform: scale(1.03);
+}
+
+.routine-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* START */
+#start {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#start button {
+    margin-top: 25px;
+    padding: 16px 40px;
+    background-color: #becc5e;
+    color: #0f1701;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(190, 204, 94, 0.2);
+}
+
+#start button:hover {
+    background-color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(190, 204, 94, 0.4);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #0f2e1f;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #becc5e;
+    text-decoration: none;
+    margin: 0 5px;
+}
